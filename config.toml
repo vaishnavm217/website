@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://vaishnavm217.github.io"
 languageCode = "en-us"
 title = "My Website"
 theme = 'black-and-light'
@@ -39,7 +39,7 @@ pygmentscodefences  = true
     url  = "/"
 [[menu.main]]
     name = "Blog"
-    url  = "blog/"
+    url  = "/blog/"
 [[menu.main]]
     name = "Resume"
-    url  = "pdf/resume.pdf"
+    url  = "/pdf/resume.pdf"
