@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+<section id=content >
+  {{ with .Site.Params.avatarurl }}
+    <div class="propic">
+      <img style="width:50%;border-radius:50%" src="{{ . | relURL }}">
+    </div>
+  {{ end }}
+  {{ with .Site.Params.social }}
+  </section>
+  <div class="about" id="nav1">
+    <ul >
+      {{ range sort .}}
+        {{ if .icon }}
+          <li id="nav1">
+            <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }}>
+              <i class="{{ .icon }}" aria-hidden="true"></i>
+            </a>
+          </li >
+        {{ else }}
+          <li id="nav1">
+            <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }}>{{ .name }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+{{ partial "footer.html" . }}

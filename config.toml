@@ -1,0 +1,45 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My Website"
+theme = 'black-and-light'
+
+paginate = 10
+pygmentsstyle       = "bw"
+pygmentscodefences  = true
+
+[params]
+  avatarurl = "images/avatar.jpg"
+  sitename = "Vaishnav Murali"
+  [[params.social]]
+      name = "Github"
+      icon = "fab fa-github"
+      url = "https://github.com/vaishnavm217"
+      weight = 2
+
+  [[params.social]]
+      name = "Telegram"
+      icon = "fab fa-telegram"
+      url = "https://t.me/@AlphaV"
+      weight = 3
+
+  [[params.social]]
+      name = "Email"
+      icon = "fab fa-google"
+      url = "mailto:vaishnavmurali@gmail.com"
+      weight = 1
+
+  [[params.social]]
+      name = "Email"
+      icon = "fab fa-google"
+      url = "mailto:vaishnav.murali@springml.com"
+      weight = 1
+
+[[menu.main]]
+    name = "About"
+    url  = "/"
+[[menu.main]]
+    name = "Blog"
+    url  = "blog/"
+[[menu.main]]
+    name = "Resume"
+    url  = "pdf/resume.pdf"
